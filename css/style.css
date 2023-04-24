@@ -1,0 +1,550 @@
+/* Reseteo */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Fuentes */
+
+/* CÓDIGO */
+/* General */  
+body {
+    background-color: #d6d6d6;
+    z-index: -1;
+}
+
+/* LOGO */
+
+/* HEADER & NAV BAR*/
+.ul-padre {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: 'Emilea';
+    font-weight: bold;
+    align-items: center;
+    opacity: 80%;
+}
+
+.ul-hijo {
+    margin-left: 50px;
+    list-style: none;
+    transition: transform 0.5s ease;
+}
+
+.ul-hijo:hover {
+    transform: scale(1.3);
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+
+/* GALERÍA HOME */
+.contenedor-home {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.contenedor-home-txt {
+    animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+h1 {
+    position: relative;
+    font-family: 'Emilea';
+    font-size: 50px;
+    font-weight: normal;
+    text-align: left;
+    color: #000000;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 0px;
+}
+
+.galeria-home {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 38vh;
+    position: absolute;
+    bottom: 0;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+.imagen {
+    flex: 1;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    transition: flex 1.2s ease;
+}
+
+.imagen:hover {
+    flex: 7;
+}
+
+/* Imágenes */
+.imagen-1 {
+    background-image: url(../Recursos/Imagenes/ELAIA005.jpg);
+}
+
+.imagen-3 {
+    background-image: url(../Recursos/Imagenes/Fachada\ patio\ aerea.jpg);
+}
+
+.imagen-4 {
+    background-image: url(../Recursos/Imagenes/001_PNG.png);
+}
+
+.imagen-5 {
+    background-image: url(../Recursos/Imagenes/CAM001_Behance.jpg);
+}
+
+.imagen-6 {
+    background-image: url(../Recursos/Imagenes/CAM001_DAY_Behance.jpg);
+}
+
+.imagen-9 {
+    background-image: url(../Recursos/Imagenes/CAM005_Behance.jpg);
+}
+
+.imagen-10 {
+    background-image: url(../Recursos/Imagenes/SUITE.jpg);
+}
+
+/* GRID GALERIA */
+.grid-padre {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 380px 380px 380px 380px 380px 380px;
+    gap: 0px 0px;
+}
+
+.h2 {
+    font-family: 'Emilea';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.h3 {
+    font-family: 'Emilea';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.h3-tour {
+    font-family: 'Emilea';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-imagen {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    transition: transform 0.5s ease;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+.grid-imagen:hover {
+    filter: grayscale(100%);
+}
+
+/* GRID FORMULARIO */
+.grid-contacto {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "formulario";
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Emilea';
+    font-size: 15px;
+    font-weight: normal;
+    text-align: left;
+    text-transform: uppercase;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+h2 {
+    font-size: 12px;
+    font-weight: lighter;
+    opacity: 50%;
+}
+
+p {
+    padding-top: 10px;
+    transition: transform 0.5s ease;
+}
+
+p:hover {
+    transform: scale(1.1);
+}
+
+.p {
+    padding-top: 10px;
+    transition: transform 0.5s ease;
+}
+
+.p:hover {
+    transform: scale(1.1);
+}
+
+.h1-contacto {
+    position: relative;
+    font-family: 'Emilea';
+    font-size: 50px;
+    font-weight: normal;
+    text-align: justify;
+    color: #000000;
+    margin-top: 200px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 0px;
+
+    transition: transform 0.5s ease;
+}
+
+.h1-contacto:hover {
+    transform: scale(1.1);
+}
+
+.formulario h2 {
+    margin-top: 10px;
+    padding-top: 50px;
+}
+
+/* Imágenes Contact */
+.imgs-contact-1 {
+    position: fixed;
+    bottom: 260px;
+    right: 200px;
+    z-index: 9999;
+    max-width: 500px;
+}
+
+.imgs-contact-2 {
+    position: fixed;
+    bottom: 400px;
+    right: 1650px;
+    z-index: 9999;
+    max-width: 330px;
+}
+
+.imgs-contact-3 {
+    position: fixed;
+    bottom: -60px;
+    right: 1200px;
+    z-index: 9999;
+    max-width: 500px;
+}
+
+.imgs-contact-4 {
+    position: fixed;
+    bottom: 500px;
+    right: 1375px;
+    z-index: 9999;
+    max-width: 350px;
+}
+
+.imgs-contact-5 {
+    position: fixed;
+    bottom: 150px;
+    right: -100px;
+    z-index: 9999;
+    max-width: 350px;
+}
+
+/* Animations */
+.imgs-contact-1,
+.imgs-contact-2,
+.imgs-contact-3,
+.imgs-contact-4,
+.imgs-contact-5 {
+    z-index: 9999;
+    animation: myAnim 3s ease 0s 1 normal forwards;
+}
+
+.imgs-contact-1:hover {
+    filter: grayscale(100%);
+}
+
+.imgs-contact-2:hover {
+    filter: grayscale(100%);
+}
+
+.imgs-contact-3:hover {
+    filter: grayscale(100%);
+}
+
+.imgs-contact-4:hover {
+    filter: grayscale(100%);
+}
+
+.imgs-contact-5:hover {
+    filter: grayscale(100%);
+}
+
+
+
+
+/* Unicode */
+/* \2192 */
+
+.link {
+    text-align: center;
+}
+
+.link:hover:before {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    /* ajusta el ancho de la imagen */
+    height: 15px;
+    /* ajusta la altura de la imagen */
+    margin-right: 10px;
+    /* ajusta la distancia entre la imagen y el texto */
+    background-image: url(../Recursos/Imagenes/behance15px.png);
+    /* ruta a tu imagen del logo de Behance */
+    opacity: 50%;
+}
+
+.link-instagram {
+    text-align: center;
+}
+
+.link-instagram:hover:before {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    /* ajusta el ancho de la imagen */
+    height: 15px;
+    /* ajusta la altura de la imagen */
+    margin-right: 10px;
+    /* ajusta la distancia entre la imagen y el texto */
+    background-image: url(../Recursos/Imagenes/instagram15px.png);
+    /* ruta a tu imagen del logo de Behance */
+    opacity: 50%;
+}
+
+
+/* FOOTER */
+.UlFooter {
+    font-family: 'Emilea';
+    font-size: small;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+}
+
+.UlFooterFlex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.UlFooter2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-family: 'Emilea';
+    list-style: none;
+    font-size: small;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+.UlFooter3 {
+    font-family: 'Emilea';
+    list-style: none;
+    font-size: small;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+.FooterNegrita {
+    font-weight: bolder;
+    text-decoration: underline;
+    transition: transform 0.5s ease;
+}
+
+.FooterNegrita:hover {
+    transform: scale(1.1);
+}
+
+.FooterIndex {
+    padding-top: 100px;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+#contacto {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 9999;
+    width: 70px;
+    height: 70px;
+    transition: transform 0.5s ease;
+}
+
+#contacto:hover {
+    transform: scale(1.2);
+}
+
+
+/* APPLY */
+.wrapper {
+    height: 80vh;
+    /*This part is important for centering*/
+    display: grid;
+    place-items: center;
+}
+
+.typing-demo {
+    width: 20ch;
+    animation: typing 3s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: 'Emilea';
+    font-size: 3em;
+    font-weight: 500;
+}
+
+.cara-triste:hover::before {
+    content: "😭";
+}
+
+
+/* ABOUT */
+
+h5 {
+    font-weight: lighter;
+    padding-top: 20px;
+    font-size: 50px;
+}
+
+.texto-hover-cambio {
+    grid-area: design;
+    font-family: 'Emilea';
+    font-weight: lighter;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    padding-top: 73px;
+    transition: transform 0.5s ease;
+}
+
+.texto-hover-cambio:hover {
+    transform: scale(1.3);
+}
+
+.AboutFlex {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-family: 'Emilea';
+    animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+.QuestionsFlex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: bolder;
+    transition: transform 0.5s ease;
+}
+
+.QuestionsFlex:hover {
+    transform: scale(1.02);
+}
+
+.AnswersFlex {
+    margin-left: 700px;
+    text-align: justify;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.texto-inicial-general {
+    grid-area: texto-inicial-general;
+    font-family: 'Emilea';
+    font-weight: lighter;
+    font-size: 100px;
+    display: flex;
+    flex-direction: row;
+    padding-left: 50px;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+.h4 {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Emilea';
+    font-size: 40px;
+    text-align: left;
+    font-weight: lighter;
+    color: aliceblue;
+    padding: 350px 30px 50px 50px;
+}
+
+
+/* KEYFRAMES */
+@keyframes myAnim {
+    0% {
+        transform: scale(0.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
